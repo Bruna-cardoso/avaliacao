@@ -11,8 +11,9 @@ public class projetopontuacao {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		int qntcompras;
+		int qntcompras, atraso;
 		double ticket;
+		char formapagamento;
 		
 		// Cabecalho
 		
@@ -29,6 +30,12 @@ public class projetopontuacao {
 		ticket = sc.nextDouble();
 		System.out.println();
 		
+		// Leitura dos outros dados
+		
+		System.out.println("Quantas vezes o cliente atrasou o pagamento?");
+		atraso = sc.nextInt();
+		System.out.println("A maioria das compras foi em dinheiro, cartão, ou boleto (D/C/B)?");
+		formapagamento = sc.next().charAt(0);
 		
 		sc.close();
 	}
