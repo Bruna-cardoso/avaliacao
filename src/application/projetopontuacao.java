@@ -24,17 +24,17 @@ public class projetopontuacao {
 		
 		// Leitura do volume
 		
-		System.out.println("Quantas compras o cliente fez no último ano?");
+		System.out.print("Quantas compras o cliente fez no último ano?");
 		qntcompras = sc.nextInt();
-		System.out.println("Qual o ticket médio?");
+		System.out.print("Qual o ticket médio?");
 		ticket = sc.nextDouble();
 		System.out.println();
 		
 		// Leitura dos outros dados
 		
-		System.out.println("Quantas vezes o cliente atrasou o pagamento?");
+		System.out.print("Quantas vezes o cliente atrasou o pagamento?");
 		atraso = sc.nextInt();
-		System.out.println("A maioria das compras foi em dinheiro, cartão, ou boleto (D/C/B)?");
+		System.out.print("A maioria das compras foi em dinheiro, cartão, ou boleto (D/C/B)?");
 		formapagamento = sc.next().charAt(0);
 		System.out.println();
 		
