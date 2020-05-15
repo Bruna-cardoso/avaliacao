@@ -11,8 +11,8 @@ public class projetopontuacao {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		int qntcompras, atraso;
-		double ticket;
+		int qntcompras, atraso, pontosvolume;
+		double ticket, volumecompras;
 		char formapagamento;
 		
 		// Cabecalho
@@ -36,6 +36,28 @@ public class projetopontuacao {
 		atraso = sc.nextInt();
 		System.out.println("A maioria das compras foi em dinheiro, cartão, ou boleto (D/C/B)?");
 		formapagamento = sc.next().charAt(0);
+		System.out.println();
+		
+		// Score de volume de compras
+		
+		volumecompras = ticket * qntcompras;
+		
+		if (qntcompras == 0) {
+			pontosvolume = 0;
+		}
+		else if (volumecompras <= 3000.0 && qntcompras <= 2) {
+			pontosvolume = 20;
+		}
+		else if (volumecompras <= 3000 && qntcompras > 2) {
+			pontosvolume = 40;
+		}
+		else {
+			pontosvolume = 60;
+		}
+		
+		System.out.println("Score de volume de compras = " + pontosvolume);
+		System.out.println();
+		
 		
 		sc.close();
 	}
