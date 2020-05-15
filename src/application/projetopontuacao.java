@@ -55,7 +55,7 @@ public class projetopontuacao {
 			pontosvolume = 60;
 		}
 		
-		System.out.println("Score de volume de compras = " + pontosvolume);
+		System.out.println("Score de volume de compras = " + pontosvolume + " pontos");
 		System.out.println();
 		
 		
